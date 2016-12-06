@@ -6,19 +6,17 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 public partial class index : System.Web.UI.Page
-    Student deObj;
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Request["Submit"].ToString().Equals("Submit"))
-        {
-            parseJsonString();
-            createJsonString();
-        }
+
     }
 
-    void createJsonString()
+    protected void Button1_Click(object sender, EventArgs e)
     {
-        Json
+        Double h = Convert.ToDouble(TextBox1.Text)/100;
+        Double w = Convert.ToDouble(TextBox2.Text);
+        Double bmi = w / (h * h);
+        Label1.Text = bmi.ToString();
     }
 }
