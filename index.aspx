@@ -12,6 +12,16 @@
     <div>
     
     </div>
+        <p>
+            身高(cm)</p>
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <p>
+            體重(kg)</p>
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <p>
+            <asp:Button ID="Button1" runat="server" Text="輸入" OnClick="Button1_Click" />
+        </p>
+        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
     </form>
 </body>
 </html>
